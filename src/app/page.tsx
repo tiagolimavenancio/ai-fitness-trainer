@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import { SignOutButton } from "@clerk/nextjs";
 
 export default function HomePage() {
 	return (
 		<div>
 			<h1>HomePage</h1>
-			<Button variant="secondary">Get Started</Button>
+			<SignOutButton />
 		</div>
 	);
 }
