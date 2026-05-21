@@ -1,5 +1,6 @@
 import { mutation } from "./_generated/server";
 import { v } from "convex/values";
+
 export const syncUser = mutation({
   args: {
     clerkId: v.string(),
