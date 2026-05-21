@@ -110,7 +110,7 @@ export default function GenerateProgramPage() {
         await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
           variableValues: {
             full_name: fullName,
-            // TODO: send user_id as well later
+            user_id: user?.id,
           },
         });
       } catch (error) {
