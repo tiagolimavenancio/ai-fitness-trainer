@@ -1,0 +1,15 @@
+{
+  "RootLayout": {
+    "description": "A modern fitness trainer AI platform to get jacked for free."
+  },
+  "HomePage": {
+    "transform": "Transform",
+    "your-body": "Your Body"
+  },
+  "Header": {
+    "home": "Home",
+    "generate": "Generate",
+    "profile": "Profile",
+    "get-started": "Get Started"
+  }
+}

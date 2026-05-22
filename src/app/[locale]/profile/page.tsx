@@ -2,7 +2,6 @@
 
 import { useUser } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
 import { useState } from "react";
 import ProfileHeader from "@/components/ProfileHeader";
 import NoFitnessPlan from "@/components/NoFitnessPlan";
@@ -16,6 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { AppleIcon, CalendarIcon, DumbbellIcon } from "lucide-react";
+import { api } from "../../../../convex/_generated/api";
 
 const ProfilePage = () => {
   const { user } = useUser();

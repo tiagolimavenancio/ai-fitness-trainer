@@ -2,9 +2,12 @@ import TerminalOverlay from "@/components/TerminalOverlay";
 import { Button } from "@/components/ui/button";
 import UserPrograms from "@/components/UserPrograms";
 import { ArrowRightIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function HomePage() {
+  const t = useTranslations("HomePage");
+
   return (
     <div className="flex flex-col min-h-screen text-foreground overflow-hidden">
       <section className="relative z-10 py-24 flex-grow">
@@ -17,10 +20,10 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-8 relative">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                 <div>
-                  <span className="text-foreground">Transform</span>
+                  <span className="text-foreground">{t("transform")}</span>
                 </div>
                 <div>
-                  <span className="text-primary">Your Body</span>
+                  <span className="text-primary">{t("your-body")}</span>
                 </div>
                 <div className="pt-2">
                   <span className="text-foreground">With Advanced</span>
