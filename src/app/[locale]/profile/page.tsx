@@ -2,6 +2,7 @@
 
 import { useUser } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import ProfileHeader from "@/components/ProfileHeader";
 import NoFitnessPlan from "@/components/NoFitnessPlan";
@@ -18,6 +19,7 @@ import { AppleIcon, CalendarIcon, DumbbellIcon } from "lucide-react";
 import { api } from "../../../../convex/_generated/api";
 
 const ProfilePage = () => {
+  const t = useTranslations("Profile");
   const { user } = useUser();
   const userId = user?.id as string;
 
@@ -41,11 +43,11 @@ const ProfilePage = () => {
             <CornerElements />
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold tracking-tight">
-                <span className="text-primary">Your</span>{" "}
-                <span className="text-foreground">Fitness Plans</span>
+                <span className="text-primary">{t("your")}</span>{" "}
+                <span className="text-foreground">{t("fitness-plans")}</span>
               </h2>
               <div className="font-mono text-xs text-muted-foreground">
-                TOTAL: {allPlans.length}
+                {t("total")} {allPlans.length}
               </div>
             </div>
 
@@ -63,7 +65,7 @@ const ProfilePage = () => {
                   {plan.name}
                   {plan.isActive && (
                     <span className="ml-2 bg-green-500/20 text-green-500 text-xs px-2 py-0.5 rounded">
-                      ACTIVE
+                      {t("active")}
                     </span>
                   )}
                 </Button>
@@ -79,7 +81,7 @@ const ProfilePage = () => {
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
                 <h3 className="text-lg font-bold">
-                  PLAN: <span className="text-primary">{currentPlan.name}</span>
+                  {t("plan")} <span className="text-primary">{currentPlan.name}</span>
                 </h3>
               </div>
 
@@ -90,14 +92,14 @@ const ProfilePage = () => {
                     className="data-[state=active]:bg-primary/20 data-[state=active]:text-primary"
                   >
                     <DumbbellIcon className="mr-2 size-4" />
-                    Workout Plan
+                    {t("workout-plan")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="diet"
                     className="data-[state=active]:bg-primary/20 data-[state=active]:text-primary"
                   >
                     <AppleIcon className="mr-2 h-4 w-4" />
-                    Diet Plan
+                    {t("diet-plan")}
                   </TabsTrigger>
                 </TabsList>
 
@@ -106,7 +108,7 @@ const ProfilePage = () => {
                     <div className="flex items-center gap-2 mb-4">
                       <CalendarIcon className="h-4 w-4 text-primary" />
                       <span className="font-mono text-sm text-muted-foreground">
-                        SCHEDULE: {currentPlan.workoutPlan.schedule.join(", ")}
+                        {t("schedule")} {currentPlan.workoutPlan.schedule.join(", ")}
                       </span>
                     </div>
 
@@ -125,7 +127,7 @@ const ProfilePage = () => {
                                     {exerciseDay.day}
                                   </span>
                                   <div className="text-xs text-muted-foreground">
-                                    {exerciseDay.routines.length} EXERCISES
+                                    {exerciseDay.routines.length} {t("exercises")}
                                   </div>
                                 </div>
                               </AccordionTrigger>
@@ -144,10 +146,10 @@ const ProfilePage = () => {
                                           </h4>
                                           <div className="flex items-center gap-2">
                                             <div className="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-mono">
-                                              {routine.sets} SETS
+                                              {routine.sets} {t("sets")}
                                             </div>
                                             <div className="px-2 py-1 rounded bg-secondary/20 text-secondary text-xs font-mono">
-                                              {routine.reps} REPS
+                                              {routine.reps} {t("reps")}
                                             </div>
                                           </div>
                                         </div>
@@ -173,10 +175,10 @@ const ProfilePage = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center mb-4">
                       <span className="font-mono text-sm text-muted-foreground">
-                        DAILY CALORIE TARGET
+                        {t("daily-calorie-target")}
                       </span>
                       <div className="font-mono text-xl text-primary">
-                        {currentPlan.dietPlan.dailyCalories} KCAL
+                        {currentPlan.dietPlan.dailyCalories} {t("kcal")}
                       </div>
                     </div>
 

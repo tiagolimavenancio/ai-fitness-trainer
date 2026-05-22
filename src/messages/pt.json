@@ -1,1 +1,106 @@
-{}
+{
+  "RootLayout": {
+    "title": "AI Fitness Trainer",
+    "description": "Uma plataforma moderna de IA para personal trainer para ficar musculoso gratuitamente."
+  },
+  "HomePage": {
+    "transform": "Transforme",
+    "your-body": "Seu Corpo",
+    "with-advanced": "Com Tecnologia",
+    "ai": "IA",
+    "technology": " Avançada",
+    "subtitle": "Converse com nosso assistente de IA e obtenha planos de dieta e treinos personalizados feitos especialmente para você",
+    "active-users": "USUÁRIOS ATIVOS",
+    "generation": "GERAÇÃO",
+    "personalized": "PERSONALIZADO",
+    "build-your-program": "Crie seu Programa",
+    "ai-fitness-coach-alt": "personal trainer IA"
+  },
+  "Header": {
+    "home": "Início",
+    "generate": "Gerar",
+    "profile": "Perfil",
+    "get-started": "Começar",
+    "sign-in": "Entrar",
+    "sign-up": "Cadastrar"
+  },
+  "Footer": {
+    "copyright": "© {year} fitnesstrainer.ai - Todos os direitos reservados",
+    "about": "Sobre",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "contact": "Contato",
+    "blog": "Blog",
+    "help": "Ajuda",
+    "system-operational": "SISTEMA OPERACIONAL"
+  },
+  "GenerateProgram": {
+    "title-before": "Gere seu ",
+    "title-highlight": "Programa de Fitness",
+    "subtitle": "Tenha uma conversa por voz com nosso assistente de IA para criar seu plano personalizado",
+    "ai-name": "Coach de Fitness IA",
+    "ai-role": "Coach de Fitness & Dieta",
+    "speaking": "Falando...",
+    "listening": "Ouvindo...",
+    "redirecting": "Redirecionando para o perfil...",
+    "waiting": "Aguardando...",
+    "you": "Você",
+    "guest": "Convidado",
+    "ready": "Pronto",
+    "system": "Sistema:",
+    "program-created": "Seu programa de fitness foi criado! Redirecionando para seu perfil...",
+    "end-call": "Encerrar Chamada",
+    "connecting": "Conectando...",
+    "view-profile": "Ver Perfil",
+    "start-call": "Iniciar Chamada",
+    "ai-assistant-alt": "Assistente de IA"
+  },
+  "Profile": {
+    "your": "Seus",
+    "fitness-plans": "Planos de Fitness",
+    "total": "TOTAL:",
+    "active": "ATIVO",
+    "plan": "PLANO:",
+    "workout-plan": "Plano de Treino",
+    "diet-plan": "Plano Alimentar",
+    "schedule": "HORÁRIO:",
+    "exercises": "EXERCÍCIOS",
+    "sets": "SÉRIES",
+    "reps": "REPETIÇÕES",
+    "daily-calorie-target": "META DIÁRIA DE CALORIAS",
+    "kcal": "KCAL"
+  },
+  "NoFitnessPlan": {
+    "no": "Nenhum",
+    "fitness-plans-yet": "plano de fitness ainda",
+    "description": "Comece criando um plano de fitness e dieta personalizado para seus objetivos e necessidades específicos",
+    "create-first-plan": "Crie seu Primeiro Plano"
+  },
+  "UserPrograms": {
+    "program-gallery": "Galeria de Programas",
+    "featured-plans": "Planos em Destaque",
+    "ai-generated": "Programas ",
+    "programs": "Gerados por IA",
+    "description": "Explore planos de fitness personalizados que nosso assistente de IA criou para outros usuários",
+    "programs-stat": "PROGRAMAS",
+    "creation-time": "TEMPO DE CRIAÇÃO",
+    "personalized-stat": "PERSONALIZADO",
+    "user-label": "USUÁRIO.{id}",
+    "system-optimized-nutrition": "Nutrição otimizada pelo sistema",
+    "ai-safety-protocols": "Protocolos de Segurança da IA",
+    "protection-systems-enabled": "Sistemas de proteção ativados",
+    "view-program-details": "Ver Detalhes do Programa",
+    "generate-your-program": "Gere seu Programa",
+    "cta-text": "Junte-se a 500+ usuários com programas de fitness personalizados por IA"
+  },
+  "ProfileHeader": {
+    "user-active": "USUÁRIO ATIVO"
+  },
+  "TerminalOverlay": {
+    "system-active": "SISTEMA ATIVO",
+    "workout-analysis": "ANÁLISE DE TREINO CONCLUÍDA",
+    "item1": "30 min de treino de força (parte superior do corpo)",
+    "item2": "20 min de cardio (intensidade moderada)",
+    "item3": "10 min de flexibilidade (recuperação)"
+  }
+}

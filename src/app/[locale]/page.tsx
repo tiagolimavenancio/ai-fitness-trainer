@@ -26,11 +26,11 @@ export default function HomePage() {
                   <span className="text-primary">{t("your-body")}</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">With Advanced</span>
+                  <span className="text-foreground">{t("with-advanced")}</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">AI</span>
-                  <span className="text-primary"> Technology</span>
+                  <span className="text-foreground">{t("ai")}</span>
+                  <span className="text-primary">{t("technology")}</span>
                 </div>
               </h1>
 
@@ -38,8 +38,7 @@ export default function HomePage() {
               <div className="h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50"></div>
 
               <p className="text-xl text-muted-foreground w-2/3">
-                Talk to our AI assistant and get personalized diet plans and
-                workout routines designed just for you
+                {t("subtitle")}
               </p>
 
               {/* STATS */}
@@ -47,21 +46,21 @@ export default function HomePage() {
                 <div className="flex flex-col">
                   <div className="text-2xl text-primary">500+</div>
                   <div className="text-xs uppercase tracking-wider">
-                    ACTIVE USERS
+                    {t("active-users")}
                   </div>
                 </div>
                 <div className="h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent"></div>
                 <div className="flex flex-col">
                   <div className="text-2xl text-primary">3min</div>
                   <div className="text-xs uppercase tracking-wider">
-                    GENERATION
+                    {t("generation")}
                   </div>
                 </div>
                 <div className="h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent"></div>
                 <div className="flex flex-col">
                   <div className="text-2xl text-primary">100%</div>
                   <div className="text-xs uppercase tracking-wider">
-                    PERSONALIZED
+                    {t("personalized")}
                   </div>
                 </div>
               </div>
@@ -77,7 +76,7 @@ export default function HomePage() {
                     href={"/generate-program"}
                     className="flex items-center font-mono"
                   >
-                    Build Your Program
+                    {t("build-your-program")}
                     <ArrowRightIcon className="ml-2 size-5" />
                   </Link>
                 </Button>
@@ -99,7 +98,7 @@ export default function HomePage() {
                 <div className="relative overflow-hidden rounded-lg bg-cyber-black">
                   <img
                     src="/hero-ai3.png"
-                    alt="ai fitness coach"
+                    alt={t("ai-fitness-coach-alt")}
                     className="size-full object-cover object-center"
                   />
 

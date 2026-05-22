@@ -2,10 +2,12 @@
 
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
 import { DumbbellIcon, HomeIcon, UserIcon, ZapIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function Header() {
+  const t = useTranslations("Header");
   const { isSignedIn } = useUser();
 
   return (
@@ -30,7 +32,7 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm hover:text-primary transition-colors"
               >
                 <HomeIcon size={16} />
-                <span>Home</span>
+                <span>{t("home")}</span>
               </Link>
 
               <Link
@@ -38,7 +40,7 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm hover:text-primary transition-colors"
               >
                 <DumbbellIcon size={16} />
-                <span>Generate</span>
+                <span>{t("generate")}</span>
               </Link>
 
               <Link
@@ -46,7 +48,7 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm hover:text-primary transition-colors"
               >
                 <UserIcon size={16} />
-                <span>Profile</span>
+                <span>{t("profile")}</span>
               </Link>
 
               <Button
@@ -54,7 +56,7 @@ export default function Header() {
                 variant="outline"
                 className="ml-2 border-primary/50 text-primary hover:text-white hover:bg-primary/10"
               >
-                <Link href="/generate-program">Get Started</Link>
+                <Link href="/generate-program">{t("get-started")}</Link>
               </Button>
 
               <UserButton />
@@ -66,13 +68,13 @@ export default function Header() {
                   variant="outline"
                   className="border-primary/50 text-primary hover:text-white hover:bg-primary/10"
                 >
-                  Sign In
+                  {t("sign-in")}
                 </Button>
               </SignInButton>
 
               <SignUpButton>
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Sign Up
+                  {t("sign-up")}
                 </Button>
               </SignUpButton>
             </>

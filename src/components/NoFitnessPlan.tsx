@@ -1,19 +1,20 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import CornerElements from "./CornerElements";
 import { Button } from "./ui/button";
 import { ArrowRightIcon } from "lucide-react";
 
 const NoFitnessPlan = () => {
+  const t = useTranslations("NoFitnessPlan");
   return (
     <div className="relative backdrop-blur-sm border border-border rounded-lg p-10 text-center">
       <CornerElements />
 
       <h2 className="text-2xl font-bold mb-4 font-mono">
-        <span className="text-primary">No</span> fitness plans yet
+        <span className="text-primary">{t("no")}</span> {t("fitness-plans-yet")}
       </h2>
       <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-        Start by creating a personalized fitness and diet plan tailored to your
-        specific goals and needs
+        {t("description")}
       </p>
       <Button
         size="lg"
@@ -22,7 +23,7 @@ const NoFitnessPlan = () => {
       >
         <Link href="/generate-program">
           <span className="relative flex items-center">
-            Create Your First Plan
+            {t("create-first-plan")}
             <ArrowRightIcon className="ml-2 h-5 w-5" />
           </span>
         </Link>

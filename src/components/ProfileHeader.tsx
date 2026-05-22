@@ -1,4 +1,5 @@
 import { UserResource } from "@clerk/nextjs/types";
+import { useTranslations } from "next-intl";
 import CornerElements from "./CornerElements";
 
 export default function ProfileHeader({
@@ -6,6 +7,7 @@ export default function ProfileHeader({
 }: {
   user: UserResource | null | undefined;
 }) {
+  const t = useTranslations("ProfileHeader");
   if (!user) return null;
 
   return (
@@ -38,7 +40,7 @@ export default function ProfileHeader({
             </h1>
             <div className="flex items-center bg-cyber-terminal-bg backdrop-blur-sm border border-border rounded px-3 py-1">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse mr-2"></div>
-              <p className="text-xs font-mono text-primary">USER ACTIVE</p>
+              <p className="text-xs font-mono text-primary">{t("user-active")}</p>
             </div>
           </div>
           <div className="h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50 my-2"></div>

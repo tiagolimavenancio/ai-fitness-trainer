@@ -3,10 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { vapi } from "@/lib/vapi";
 import { useUser } from "@clerk/nextjs";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 export default function GenerateProgramPage() {
+  const t = useTranslations("GenerateProgram");
   const [messages, setMessages] = useState<any[]>([]);
 
   const [isSpeaking, setIsSpeaking] = useState(false);
@@ -150,13 +152,12 @@ export default function GenerateProgramPage() {
         {/* Title */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold font-mono">
-            <span>Generate Your </span>
-            <span className="text-primary uppercase">Fitness Program</span>
+            <span>{t("title-before")}</span>
+            <span className="text-primary uppercase">
+              {t("title-highlight")}
+            </span>
           </h1>
-          <p className="text-muted-foreground mt-2">
-            Have a voice conversation with our AI assistant to create your
-            personalized plan
-          </p>
+          <p className="text-muted-foreground mt-2">{t("subtitle")}</p>
         </div>
 
         {/* VIDEO CALL AREA */}
@@ -201,16 +202,16 @@ export default function GenerateProgramPage() {
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-secondary/10"></div>
                   <img
                     src="/ai-avatar.png"
-                    alt="AI Assistant"
+                    alt={t("ai-assistant-alt")}
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               <h2 className="text-xl font-bold text-foreground">
-                Fitness Coach AI
+                {t("ai-name")}
               </h2>
               <p className="text-sm text-muted-foreground mt-1">
-                Fitness & Diet Coach
+                {t("ai-role")}
               </p>
 
               {/* SPEAKING INDICATOR */}
@@ -227,12 +228,12 @@ export default function GenerateProgramPage() {
 
                 <span className="text-xs text-muted-foreground">
                   {isSpeaking
-                    ? "Speaking..."
+                    ? t("speaking")
                     : callActive
-                      ? "Listening..."
+                      ? t("listening")
                       : callEnded
-                        ? "Redirecting to profile..."
-                        : "Waiting..."}
+                        ? t("redirecting")
+                        : t("waiting")}
                 </span>
               </div>
             </div>
@@ -253,11 +254,11 @@ export default function GenerateProgramPage() {
                 />
               </div>
 
-              <h2 className="text-xl font-bold text-foreground">You</h2>
+              <h2 className="text-xl font-bold text-foreground">{t("you")}</h2>
               <p className="text-sm text-muted-foreground mt-1">
                 {user
                   ? (user.firstName + " " + (user.lastName || "")).trim()
-                  : "Guest"}
+                  : t("guest")}
               </p>
 
               {/* User Ready Text */}
@@ -265,7 +266,9 @@ export default function GenerateProgramPage() {
                 className={`mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-card border`}
               >
                 <div className={`w-2 h-2 rounded-full bg-muted`} />
-                <span className="text-xs text-muted-foreground">Ready</span>
+                <span className="text-xs text-muted-foreground">
+                  {t("ready")}
+                </span>
               </div>
             </div>
           </Card>
@@ -281,7 +284,7 @@ export default function GenerateProgramPage() {
               {messages.map((msg, index) => (
                 <div key={index} className="message-item animate-fadeIn">
                   <div className="font-semibold text-xs text-muted-foreground mb-1">
-                    {msg.role === "assistant" ? "Fitness Coach AI" : "You"}:
+                    {msg.role === "assistant" ? t("ai-name") : t("you")}:
                   </div>
                   <p className="text-foreground">{msg.content}</p>
                 </div>
@@ -290,12 +293,9 @@ export default function GenerateProgramPage() {
               {callEnded && (
                 <div className="message-item animate-fadeIn">
                   <div className="font-semibold text-xs text-primary mb-1">
-                    System:
+                    {t("system")}
                   </div>
-                  <p className="text-foreground">
-                    Your fitness program has been created! Redirecting to your
-                    profile...
-                  </p>
+                  <p className="text-foreground">{t("program-created")}</p>
                 </div>
               )}
             </div>
@@ -321,12 +321,12 @@ export default function GenerateProgramPage() {
 
             <span>
               {callActive
-                ? "End Call"
+                ? t("end-call")
                 : connecting
-                  ? "Connecting..."
+                  ? t("connecting")
                   : callEnded
-                    ? "View Profile"
-                    : "Start Call"}
+                    ? t("view-profile")
+                    : t("start-call")}
             </span>
           </Button>
         </div>

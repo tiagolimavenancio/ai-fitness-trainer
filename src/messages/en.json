@@ -1,15 +1,106 @@
 {
   "RootLayout": {
+    "title": "AI Fitness Trainer",
     "description": "A modern fitness trainer AI platform to get jacked for free."
   },
   "HomePage": {
     "transform": "Transform",
-    "your-body": "Your Body"
+    "your-body": "Your Body",
+    "with-advanced": "With Advanced",
+    "ai": "AI",
+    "technology": " Technology",
+    "subtitle": "Talk to our AI assistant and get personalized diet plans and workout routines designed just for you",
+    "active-users": "ACTIVE USERS",
+    "generation": "GENERATION",
+    "personalized": "PERSONALIZED",
+    "build-your-program": "Build Your Program",
+    "ai-fitness-coach-alt": "ai fitness coach"
   },
   "Header": {
     "home": "Home",
     "generate": "Generate",
     "profile": "Profile",
-    "get-started": "Get Started"
+    "get-started": "Get Started",
+    "sign-in": "Sign In",
+    "sign-up": "Sign Up"
+  },
+  "Footer": {
+    "copyright": "© {year} fitnesstrainer.ai - All rights reserved",
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "blog": "Blog",
+    "help": "Help",
+    "system-operational": "SYSTEM OPERATIONAL"
+  },
+  "GenerateProgram": {
+    "title-before": "Generate Your ",
+    "title-highlight": "Fitness Program",
+    "subtitle": "Have a voice conversation with our AI assistant to create your personalized plan",
+    "ai-name": "Fitness Coach AI",
+    "ai-role": "Fitness & Diet Coach",
+    "speaking": "Speaking...",
+    "listening": "Listening...",
+    "redirecting": "Redirecting to profile...",
+    "waiting": "Waiting...",
+    "you": "You",
+    "guest": "Guest",
+    "ready": "Ready",
+    "system": "System:",
+    "program-created": "Your fitness program has been created! Redirecting to your profile...",
+    "end-call": "End Call",
+    "connecting": "Connecting...",
+    "view-profile": "View Profile",
+    "start-call": "Start Call",
+    "ai-assistant-alt": "AI Assistant"
+  },
+  "Profile": {
+    "your": "Your",
+    "fitness-plans": "Fitness Plans",
+    "total": "TOTAL:",
+    "active": "ACTIVE",
+    "plan": "PLAN:",
+    "workout-plan": "Workout Plan",
+    "diet-plan": "Diet Plan",
+    "schedule": "SCHEDULE:",
+    "exercises": "EXERCISES",
+    "sets": "SETS",
+    "reps": "REPS",
+    "daily-calorie-target": "DAILY CALORIE TARGET",
+    "kcal": "KCAL"
+  },
+  "NoFitnessPlan": {
+    "no": "No",
+    "fitness-plans-yet": "fitness plans yet",
+    "description": "Start by creating a personalized fitness and diet plan tailored to your specific goals and needs",
+    "create-first-plan": "Create Your First Plan"
+  },
+  "UserPrograms": {
+    "program-gallery": "Program Gallery",
+    "featured-plans": "Featured Plans",
+    "ai-generated": "AI-Generated ",
+    "programs": "Programs",
+    "description": "Explore personalized fitness plans our AI assistant has created for other users",
+    "programs-stat": "PROGRAMS",
+    "creation-time": "CREATION TIME",
+    "personalized-stat": "PERSONALIZED",
+    "user-label": "USER.{id}",
+    "system-optimized-nutrition": "System optimized nutrition",
+    "ai-safety-protocols": "AI Safety Protocols",
+    "protection-systems-enabled": "Protection systems enabled",
+    "view-program-details": "View Program Details",
+    "generate-your-program": "Generate Your Program",
+    "cta-text": "Join 500+ users with AI-customized fitness programs"
+  },
+  "ProfileHeader": {
+    "user-active": "USER ACTIVE"
+  },
+  "TerminalOverlay": {
+    "system-active": "SYSTEM ACTIVE",
+    "workout-analysis": "WORKOUT ANALYSIS COMPLETE",
+    "item1": "30 min strength training (upper body)",
+    "item2": "20 min cardio (moderate intensity)",
+    "item3": "10 min flexibility (recovery)"
   }
 }

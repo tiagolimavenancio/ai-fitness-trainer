@@ -1,1 +1,106 @@
-{}
+{
+  "RootLayout": {
+    "title": "AI Fitness Trainer",
+    "description": "Eine moderne KI-Plattform für Fitnesstrainer, um kostenlos Muskeln aufzubauen."
+  },
+  "HomePage": {
+    "transform": "Verwandle",
+    "your-body": "Deinen Körper",
+    "with-advanced": "Mit fortschrittlicher",
+    "ai": "KI",
+    "technology": " Technologie",
+    "subtitle": "Sprich mit unserem KI-Assistenten und erhalte personalisierte Ernährungs- und Trainingspläne, die speziell für dich entwickelt wurden",
+    "active-users": "AKTIVE NUTZER",
+    "generation": "ERSTELLUNG",
+    "personalized": "PERSONALISIERT",
+    "build-your-program": "Erstelle dein Programm",
+    "ai-fitness-coach-alt": "KI-Fitnesscoach"
+  },
+  "Header": {
+    "home": "Start",
+    "generate": "Erstellen",
+    "profile": "Profil",
+    "get-started": "Loslegen",
+    "sign-in": "Anmelden",
+    "sign-up": "Registrieren"
+  },
+  "Footer": {
+    "copyright": "© {year} fitnesstrainer.ai - Alle Rechte vorbehalten",
+    "about": "Über uns",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "help": "Hilfe",
+    "system-operational": "SYSTEM AKTIV"
+  },
+  "GenerateProgram": {
+    "title-before": "Erstelle dein ",
+    "title-highlight": "Fitnessprogramm",
+    "subtitle": "Führe ein Sprachgespräch mit unserem KI-Assistenten, um deinen personalisierten Plan zu erstellen",
+    "ai-name": "Fitness Coach KI",
+    "ai-role": "Fitness- & Ernährungscoach",
+    "speaking": "Spricht...",
+    "listening": "Hört zu...",
+    "redirecting": "Weiterleitung zum Profil...",
+    "waiting": "Warten...",
+    "you": "Du",
+    "guest": "Gast",
+    "ready": "Bereit",
+    "system": "System:",
+    "program-created": "Dein Fitnessprogramm wurde erstellt! Weiterleitung zu deinem Profil...",
+    "end-call": "Anruf beenden",
+    "connecting": "Verbinde...",
+    "view-profile": "Profil anzeigen",
+    "start-call": "Anruf starten",
+    "ai-assistant-alt": "KI-Assistent"
+  },
+  "Profile": {
+    "your": "Deine",
+    "fitness-plans": "Fitnesspläne",
+    "total": "GESAMT:",
+    "active": "AKTIV",
+    "plan": "PLAN:",
+    "workout-plan": "Trainingsplan",
+    "diet-plan": "Ernährungsplan",
+    "schedule": "ZEITPLAN:",
+    "exercises": "ÜBUNGEN",
+    "sets": "SÄTZE",
+    "reps": "WIEDERHOLUNGEN",
+    "daily-calorie-target": "TÄGLICHES KALORIENZIEL",
+    "kcal": "KCAL"
+  },
+  "NoFitnessPlan": {
+    "no": "Keine",
+    "fitness-plans-yet": "Fitnesspläne vorhanden",
+    "description": "Erstelle einen personalisierten Fitness- und Ernährungsplan, der auf deine spezifischen Ziele und Bedürfnisse zugeschnitten ist",
+    "create-first-plan": "Ersten Plan erstellen"
+  },
+  "UserPrograms": {
+    "program-gallery": "Programmgalerie",
+    "featured-plans": "Empfohlene Pläne",
+    "ai-generated": "KI-generierte ",
+    "programs": "Programme",
+    "description": "Entdecke personalisierte Fitnesspläne, die unser KI-Assistent für andere Nutzer erstellt hat",
+    "programs-stat": "PROGRAMME",
+    "creation-time": "ERSTELLUNGSZEIT",
+    "personalized-stat": "PERSONALISIERT",
+    "user-label": "BENUTZER.{id}",
+    "system-optimized-nutrition": "Systemoptimierte Ernährung",
+    "ai-safety-protocols": "KI-Sicherheitsprotokolle",
+    "protection-systems-enabled": "Schutzsysteme aktiviert",
+    "view-program-details": "Programmdetails anzeigen",
+    "generate-your-program": "Erstelle dein Programm",
+    "cta-text": "Schließe dich 500+ Nutzern mit KI-angepassten Fitnessprogrammen an"
+  },
+  "ProfileHeader": {
+    "user-active": "BENUTZER AKTIV"
+  },
+  "TerminalOverlay": {
+    "system-active": "SYSTEM AKTIV",
+    "workout-analysis": "TRAININGSANALYSE ABGESCHLOSSEN",
+    "item1": "30 Min. Krafttraining (Oberkörper)",
+    "item2": "20 Min. Cardio (moderate Intensität)",
+    "item3": "10 Min. Beweglichkeit (Erholung)"
+  }
+}
